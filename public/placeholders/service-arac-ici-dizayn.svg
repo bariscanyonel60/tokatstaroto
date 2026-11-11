@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" preserveAspectRatio="xMidYMid slice" role="img">
+<defs>
+<radialGradient id="bg" cx="72%" cy="38%" r="88%"><stop offset="0" stop-color="#3d2818"/><stop offset=".45" stop-color="#121317"/><stop offset="1" stop-color="#070708"/></radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3c45"/><stop offset=".4" stop-color="#1c1d22"/><stop offset="1" stop-color="#0a0a0c"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0.35"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF681E" stop-opacity=".55"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></linearGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF681E" stop-opacity=".28"/><stop offset=".55" stop-color="#FF681E" stop-opacity=".06"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></linearGradient>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FF681E" stop-opacity="0.4"/><stop offset=".55" stop-color="#FF681E" stop-opacity=".08"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0a0c" stop-opacity="0"/><stop offset="1" stop-color="#0a0a0c" stop-opacity=".96"/></linearGradient>
+<linearGradient id="sideshade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".82"/><stop offset=".28" stop-color="#000" stop-opacity="0"/><stop offset=".72" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".82"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .075 0"/></filter>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14.4"/></filter>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg)"/>
+<ellipse cx="744" cy="120" rx="264" ry="90" fill="#FF681E" opacity="0.22" filter="url(#soft)"/>
+<polygon points="648,0 840,0 1008,1500 480,1500" fill="url(#shaft)" opacity="0.85"/>
+
+<path d="M0 960 C300 750 900 750 1200 960 L1200 1500 L0 1500 Z" fill="url(#body)"/>
+<path d="M0 960 C300 750 900 750 1200 960" fill="none" stroke="#FF681E" stroke-width="3" stroke-opacity=".9"/>
+<path d="M0 1050 C300 840 900 840 1200 1050" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+<circle cx="384" cy="1005" r="120" fill="#08090b" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+<circle cx="384" cy="1005" r="98.4" fill="none" stroke="#FF681E" stroke-opacity=".75" stroke-width="3" stroke-dasharray="2 9"/>
+<path d="M384 1005 L450 963" stroke="#FF681E" stroke-width="3" stroke-linecap="round"/>
+<circle cx="684" cy="1005" r="120" fill="#08090b" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+<circle cx="684" cy="1005" r="98.4" fill="none" stroke="#FF681E" stroke-opacity=".75" stroke-width="3" stroke-dasharray="2 9"/>
+<path d="M684 1005 L750 963" stroke="#FF681E" stroke-width="3" stroke-linecap="round"/>
+<rect x="696" y="750" width="264" height="240" rx="8" fill="#08090b" stroke="#FF681E" stroke-opacity=".6" stroke-width="2"/>
+<path d="M720 900 L780 825 L840 870 L924 780" fill="none" stroke="#FF681E" stroke-width="3" stroke-linecap="round"/>
+<circle cx="312" cy="1530" r="750" fill="none" stroke="#1a1b1f" stroke-width="150"/>
+<circle cx="312" cy="1530" r="660" fill="none" stroke="#FF681E" stroke-opacity=".75" stroke-width="3" stroke-dasharray="9 9"/>
+<ellipse cx="600" cy="870" rx="540" ry="75" fill="url(#floor)"/>
+<rect width="1200" height="1500" fill="url(#sheen)" opacity=".55"/>
+<rect width="1200" height="1500" fill="url(#sideshade)" opacity=".45"/>
+<rect width="1200" height="1500" filter="url(#grain)" opacity=".85"/>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250" width="1000" height="1250" preserveAspectRatio="xMidYMid slice" role="img">
+<defs>
+<radialGradient id="bg" cx="72%" cy="38%" r="88%"><stop offset="0" stop-color="#3d2818"/><stop offset=".45" stop-color="#121317"/><stop offset="1" stop-color="#070708"/></radialGradient>
+<linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3c45"/><stop offset=".4" stop-color="#1c1d22"/><stop offset="1" stop-color="#0a0a0c"/></linearGradient>
+<linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0.35"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".14"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<linearGradient id="beam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF681E" stop-opacity=".55"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></linearGradient>
+<linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF681E" stop-opacity=".28"/><stop offset=".55" stop-color="#FF681E" stop-opacity=".06"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></linearGradient>
+<radialGradient id="floor" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#FF681E" stop-opacity="0.4"/><stop offset=".55" stop-color="#FF681E" stop-opacity=".08"/><stop offset="1" stop-color="#FF681E" stop-opacity="0"/></radialGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0a0c" stop-opacity="0"/><stop offset="1" stop-color="#0a0a0c" stop-opacity=".96"/></linearGradient>
+<linearGradient id="sideshade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#000" stop-opacity=".82"/><stop offset=".28" stop-color="#000" stop-opacity="0"/><stop offset=".72" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".82"/></linearGradient>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .075 0"/></filter>
+<filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="1000" height="1250" fill="url(#bg)"/>
+<ellipse cx="620" cy="100" rx="220" ry="75" fill="#FF681E" opacity="0.22" filter="url(#soft)"/>
+<polygon points="540,0 700,0 840,1250 400,1250" fill="url(#shaft)" opacity="0.85"/>
+
+<ellipse cx="500" cy="912.5" rx="400" ry="50" fill="url(#floor)"/>
+<g transform="translate(130 607.89) scale(0.97)">
+<path d="M20 230 C20 170 60 140 130 124 L200 60 C250 34 510 34 560 60 L630 124 C700 140 740 170 740 230 L740 300 L20 300 Z" fill="url(#body)" stroke="rgba(255,255,255,.1)" stroke-width="2"/>
+<path d="M226 74 C290 52 470 52 534 74 L586 124 L174 124 Z" fill="#08090b" stroke="#FF681E" stroke-opacity=".55" stroke-width="2"/>
+<path d="M86 190 L250 168 L242 192 L96 214 Z" fill="#FF681E" opacity="0.95"/>
+<path d="M674 190 L510 168 L518 192 L664 214 Z" fill="#FF681E" opacity="0.95"/>
+<rect x="290" y="206" width="180" height="62" rx="10" fill="#0a0a0c" stroke="rgba(255,255,255,.14)" stroke-width="2"/>
+<path d="M300 226 H460 M300 246 H460" stroke="rgba(255,255,255,.12)" stroke-width="2"/>
+<path d="M20 262 H740" stroke="#FF681E" stroke-opacity=".5" stroke-width="2"/>
+<path d="M130 124 L200 60 C250 34 510 34 560 60 L630 124" fill="none" stroke="#FF681E" stroke-width="3" stroke-opacity=".85"/>
+</g>
+<rect width="1000" height="1250" fill="url(#sheen)" opacity=".55"/>
+<rect width="1000" height="1250" fill="url(#sideshade)" opacity=".45"/>
+<rect width="1000" height="1250" filter="url(#grain)" opacity=".85"/>
+</svg>
